@@ -50,7 +50,7 @@ result.append("----------------------------")
 result.append(" Winner :" + candidates_sorted[0]["name"] )
 result.append("----------------------------")
 
-with open("polls_result.txt", 'w',newline = '') as file_w:
+with open("polls_result.csv", 'w',newline = '') as file_w:
     csv_writer = csv.writer(file_w, delimiter=",")
     for x in result: 
         csv_writer.writerow([x])
